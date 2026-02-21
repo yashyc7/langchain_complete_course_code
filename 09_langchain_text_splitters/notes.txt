@@ -1,0 +1,35 @@
+Text splitting is the process of breaking large chunks of text (like articles,pdf , html pages or books  )
+into smaller pieces( chunks)
+that an LLM can handle effectively. 
+
+-> overcoming model limitations : many embedding models and language models have maximum input size 
+contraints allowing us to process documents that would otherwise exceed these limits. 
+
+
+-> optimizing computational resources : working with smaller chunks of text that can be more memory-efficient and allows for better parallelization of processing tasks.
+
+
+1. Length based. 
+2. text strcuture based. 
+3. Document structure based. 
+4. Semantic meaning based. 
+
+
+1. What is a Text Splitter (first principles)
+
+A TextSplitter is a preprocessing component in LangChain that:
+
+• Takes raw text or documents
+• Breaks them into smaller chunks
+• Preserves context using overlap
+• Produces chunks suitable for embedding, vector storage, and retrieval
+
+Why this is mandatory:
+
+LLMs and embedding models have context length limits.
+Vector databases perform semantic search on chunks, not entire documents.
+Poor chunking = poor retrieval = hallucinations.
+
+
+text splitters improve the quality of responses from llm since they hallucinate with larger texts 
+

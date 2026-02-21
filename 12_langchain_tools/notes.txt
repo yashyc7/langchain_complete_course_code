@@ -1,0 +1,48 @@
+langchain provides the built in tools for executing tasks below 
+
+here it is 
+
+you dont have to write the logic yourself its given through the langchain framework 
+some exampels are below 
+
+
+
+DuckDuckGoSearchRun  - web search via duckduck go 
+
+WikipediaQueryRun - wikipedia summary 
+
+pythonREPLTool - run raw python code 
+
+
+shellTool - run shell commands 
+
+RequestsGetTool - make http get requests 
+
+GmailSendMessageTool - send messages via gmail 
+
+slackSendMessageTool - send message via slack 
+
+SQLDatabaseQueryTool -run sql queries tool 
+
+
+A custom tool is a tool that you define yourself
+
+use them when you wanted to call your apis 
+you wanted to encapsulate buisness logic 
+you wanted the llm to interact with your database  , product or app 
+
+
+
+Ways to create the custom tools are
+
+using tool decorator
+
+using StructuredTool & pydantic -> most strict and professional method
+
+using base tool class 
+
+
+a structured tool is an special type of tool where the input of the tool follows a structued schemna , typically defined by using a 
+pydantic model 
+
+base tool is the abstract base class 

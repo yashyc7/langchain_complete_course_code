@@ -1,0 +1,7 @@
+The only time a software engineer truly understands “graceful shutdown” is when a well-set batsman gets out at 99.
+
+System running perfectly.
+No errors.
+High performance.
+
+Then one unexpected edge to slip… and production is down.

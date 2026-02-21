@@ -1,0 +1,50 @@
+ORDER_ID: ORD-2026-000873
+--------------------------------------------------
+
+[2026-02-03 10:12:18] USER:
+Hi, I want to check the status of my order.
+
+[2026-02-03 10:12:21] ASSISTANT:
+Sure. Please confirm your Order ID.
+
+[2026-02-03 10:12:35] USER:
+My Order ID is ORD-2026-000873.
+
+[2026-02-03 10:12:38] ASSISTANT:
+Thank you. Your order is currently in the "Out for Delivery" stage and is expected to arrive today.
+
+[2026-02-03 12:46:02] USER:
+The package hasn’t arrived yet. I want to cancel the order.
+
+[2026-02-03 12:46:06] ASSISTANT:
+I’m sorry for the delay. Since the order is already out for delivery, cancellation is not possible. You may request a return after delivery.
+
+[2026-02-03 16:15:44] USER:
+The item was delivered, but it’s damaged. I want a refund.
+
+[2026-02-03 16:15:50] ASSISTANT:
+I’m sorry to hear that. I have initiated a return request for Order ID ORD-2026-000873. A pickup will be scheduled within 48 hours.
+
+[2026-02-04 09:20:11] USER:
+When will I get my refund?
+
+[2026-02-04 09:20:15] ASSISTANT:
+Once the returned item passes inspection, the refund will be processed within 5–7 business days to your original payment method.
+
+[2026-02-06 14:42:27] USER:
+The item has been picked up.
+
+[2026-02-06 14:42:30] ASSISTANT:
+Thank you for confirming. The returned item has been received at our warehouse and is under quality inspection.
+
+[2026-02-07 11:10:09] USER:
+Is my refund approved?
+
+[2026-02-07 11:10:14] ASSISTANT:
+Yes. The refund for Order ID ORD-2026-000873 has been approved. The amount will be credited within 3–5 business days.
+
+[2026-02-10 18:05:52] SYSTEM:
+Refund completed successfully.
+Refund Reference ID: RFND-2026-004129
+Refund Amount: ₹2,499
+Payment Method: UPI

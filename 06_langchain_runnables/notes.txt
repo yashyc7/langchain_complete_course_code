@@ -1,0 +1,30 @@
+the langchain team created multiple chain for reusable components
+this made codebase heavy and hard learning curve 
+
+
+then runnable is an type of unit of work 
+
+runnable has a purpose 
+
+it take input -> process -> output
+
+
+
+invoke()
+batchI()
+stream()
+
+
+we can connect them because they are made up or same interface 
+
+
+they are like lego blocks 
+
+they have same interface like lego like an place to inject and connect them right 
+
+resultant is also an lego 
+so small runnables join together to make bigger runnable 
+
+which can be added together to make bigger runnable and so on 
+
+

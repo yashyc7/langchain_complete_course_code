@@ -1,0 +1,14 @@
+what and why ? 
+
+
+we do multipe steps in processing prompts to get answer throgh llms
+so we use chains concept do minimize code okey 
+
+so in this chains what happends is the output of first step is automatically works as the input for the second step 
+
+and so on so in this way the chain is created here 
+
+1. simple chain 
+2. parallel chain 
+3. sequential chain 
+4. condiational chain 
