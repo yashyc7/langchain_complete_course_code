@@ -1,0 +1,16 @@
+#tool binding is the step is the registration of tools to the large language model 
+so that the llm knows which tools are available 
+it knows what each tool does 
+
+it knows what input format to use (via schema)
+
+we have to make the input schema (importnat) and the tool binding to the llm 
+
+
+
+
+IMPORTANT 
+
+the llm doesn't actually run the tool it just suggest the tool and the input arguments
+. the actual execution is handeled by the langchain 
+or you  . 
