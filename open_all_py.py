@@ -63,36 +63,30 @@ def find_code_cli():
 # ------------------------------------------------------------
 def open_files(root: str, delay: float = 10.0) -> int:
     code_cli = find_code_cli()
-    opened_files: Set[str] = set()
 
     try:
         while True:
-            current_files = set(find_py_files(root))
-            new_files = current_files - opened_files
+            py_files = find_py_files(root)
 
-            if not new_files:
-                print("No new Python files found. Waiting...")
+            if not py_files:
+                print("No Python files found.")
             else:
-                for file_path in sorted(new_files):
+                print(f"Opening {len(py_files)} file(s)...")
+
+                for file_path in py_files:
                     if code_cli:
                         subprocess.run(
                             [code_cli, "--reuse-window", file_path],
                             stdout=subprocess.DEVNULL,
                             stderr=subprocess.DEVNULL
                         )
-                        print(f"Opened in VS Code: {file_path}")
                     else:
                         os.startfile(file_path)
-                        print(f"Opened with default app: {file_path}")
 
-                    opened_files.add(file_path)
-
+                    print(f"Opened: {file_path}")
                     time.sleep(delay)
 
-                print(f"Cycle complete. Opened {len(new_files)} file(s).")
-
-            # Wait before rescanning
-            time.sleep(delay)
+            print("Restarting cycle...\n")
 
     except KeyboardInterrupt:
         print("\nStopped by user (Ctrl+C).")
